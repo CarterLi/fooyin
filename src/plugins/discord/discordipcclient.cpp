@@ -30,6 +30,9 @@
 #include <QLoggingCategory>
 #include <QTimer>
 #include <QUuid>
+#if defined(Q_OS_MAC)
+    #include <QDir>
+#endif
 
 #include <QCoro/QCoroLocalSocket>
 
